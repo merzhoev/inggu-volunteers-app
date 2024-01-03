@@ -30,7 +30,7 @@ fn(5);
 // TODO: в будущем подумать о доступности (eslint плагин: eslint-plugin-jsx-a11y)
 // TODO[IMPORTANT]: добавить husky pre-commit hook для conventional commits
 export function App() {
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(5);
 
   return (
     <>
