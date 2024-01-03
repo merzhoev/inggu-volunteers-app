@@ -22,7 +22,7 @@ fn(5);
 
 // "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 
-// TODO: add husky
+// TODO: блокировать пуш в master
 // TODO: postcss (https://github.com/postcss/autoprefixer)
 // TODO: maybe add tailwind css (include postcss) + preflight: false
 // TODO: заюзать сервис для проверки циклических зависимостей

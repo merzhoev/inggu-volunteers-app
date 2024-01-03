@@ -4,7 +4,7 @@ const nodeBuiltinModules = builtinModules.join('|');
 
 module.exports = {
   root: true,
-  env: { browser: true, es2020: true },
+  env: { browser: true, es2020: true, node: true },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
@@ -32,14 +32,14 @@ module.exports = {
       'warn',
       {
         groups: [
-          /* import 'foo*' or import '@foo*' */
-          [`^\\u0000@?\\w`],
           /* import ... from 'fs' */
           [`^(${nodeBuiltinModules})`],
           /* import ... from 'foo*' or import ... from '@foo*' */
           [`^@?\\w`],
           /* import ... from './foo*' or import ... from '../foo*' */
           ['^\\.'],
+          /* import 'foo*' or import '@foo*' */
+          [`^\\u0000@?\\w`],
           /* import './foo*' or import '../foo*' */
           ['^\\u0000\\.'],
         ],
