@@ -32,8 +32,6 @@ fn(5);
 export function App() {
   const [count, setCount] = useState(0);
 
-  console.log(count);
-
   return (
     <>
       <div>
