@@ -2,11 +2,7 @@ import { useState } from 'react';
 
 import reactLogo from './assets/react.svg';
 
-// TODO-M: npm i vite-plugin-svgr
 import './App.css';
-
-// TODO-M: заюзать структуру проекта как на работе + eslint-boundaries для блокирования импортов по слоям
-// npm i -D eslint-plugin-boundaries
 
 const fn = (n: number) => {
   if (n) {
@@ -18,17 +14,17 @@ const fn = (n: number) => {
 
 fn(5);
 
+// TODO-M: заюзать структуру проекта как на работе + eslint-boundaries для блокирования импортов по слоям
+// npm i -D eslint-plugin-boundaries
+// TODO-M: настроить алиасы
+// TODO: npm i vite-plugin-svgr
+// TODO: postcss (https://github.com/postcss/autoprefixer)
 // TODO: добавить расширение, которое показывает, кто (в гите) писал код
 
-// "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-
-// TODO: блокировать пуш в master
-// TODO: postcss (https://github.com/postcss/autoprefixer)
 // TODO: maybe add tailwind css (include postcss) + preflight: false
 // TODO: заюзать сервис для проверки циклических зависимостей
 // TODO: заюзать knip для поиска ненужного кода
 // TODO: в будущем подумать о доступности (eslint плагин: eslint-plugin-jsx-a11y)
-// TODO[IMPORTANT]: добавить husky pre-commit hook для conventional commits
 export function App() {
   const [count, setCount] = useState(0);
 
