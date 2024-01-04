@@ -14,8 +14,6 @@ const fn = (n: number) => {
 
 fn(5);
 
-// TODO: блокировать пуш в master
-// TODO: глянуть автоудаление ветки после мержа
 // TODO-M: заюзать структуру проекта как на работе + eslint-boundaries для блокирования импортов по слоям
 // npm i -D eslint-plugin-boundaries
 // TODO-M: настроить алиасы
